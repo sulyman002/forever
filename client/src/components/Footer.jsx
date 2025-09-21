@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-6 md:px-0 py-6 ">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full border-b border-gray-300 gap-10 pb-7 md:gap-50">
           <div className="flex flex-col items-center justify-center md:items-start md:justify-start gap-10">
-            <h1 className="uppercase text-[46px] font-bold font-[Audiowide]">
-              Forever<span className="text-[#C586A5] text-[60px] ">.</span>
+            <h1 className="uppercase text-[25px] md:text-[46px] font-bold font-[Audiowide]">
+              Pulsepoint<span className="text-[#C586A5] text-[60px] ">.</span>
             </h1>
             <div className=" text-[18px]  text-center md:text-start text-[#595959] leading-[30px] ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
