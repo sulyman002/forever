@@ -17,7 +17,7 @@ const Nav = () => {
         </div>
 
         {/* Nav menu */}
-        <nav className="space-x-6 hidden md:flex text-[16px] text-[#2A2A2A]">
+        <nav className="space-x-6 hidden lg:flex text-[16px] text-[#2A2A2A]">
           <Link
             onClick={() => setNavBorder("home")}
             to="/"
@@ -30,7 +30,7 @@ const Nav = () => {
           </Link>
           <Link
             onClick={() => setNavBorder("collection")}
-            to="#"
+            to="all-collections"
             className="uppercase flex flex-col items-center"
           >
             Collection
@@ -83,7 +83,7 @@ const Nav = () => {
               </p>
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <img
               src={assets.navIcons.menu}
               alt="menuIcon"

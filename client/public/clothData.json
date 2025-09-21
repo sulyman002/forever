@@ -1,0 +1,471 @@
+
+[
+  {
+    "id": 1,
+    "title": "Women Floral Off-Shoulder Top",
+    "price": 149,
+    "category": "Women",
+    "type": "Top",
+    "color": "Floral Purple",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 2,
+    "title": "Men Classic Polo T-shirt",
+    "price": 159,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "Navy Blue",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 3,
+    "title": "Girls Summer Cotton Dress",
+    "price": 139,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Pastel Pink",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 4,
+    "title": "Boys Graphic Print T-shirt",
+    "price": 129,
+    "category": "Boys",
+    "type": "T-shirt",
+    "color": "Red",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 5,
+    "title": "Women V-neck Blouse",
+    "price": 169,
+    "category": "Women",
+    "type": "Top",
+    "color": "White",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 6,
+    "title": "Men Slim Fit Shirt",
+    "price": 179,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "Sky Blue",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 7,
+    "title": "Girls Printed Skirt",
+    "price": 139,
+    "category": "Girls",
+    "type": "Skirt",
+    "color": "Yellow Floral",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 8,
+    "title": "Men Round Neck T-shirt",
+    "price": 149,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "Black",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 9,
+    "title": "Women Casual Hoodie",
+    "price": 189,
+    "category": "Women",
+    "type": "Hoodie",
+    "color": "Gray",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 10,
+    "title": "Boys Denim Shorts",
+    "price": 139,
+    "category": "Boys",
+    "type": "Shorts",
+    "color": "Denim Blue",
+    "image": "./heroImg.png"
+  },
+  {
+    "id": 11,
+    "title": "Men Tapered Fit Trousers",
+    "price": 179,
+    "category": "Men",
+    "type": "Trousers",
+    "color": "Navy",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Trousers"
+  },
+  {
+    "id": 12,
+    "title": "Women Knit Sweater",
+    "price": 189,
+    "category": "Women",
+    "type": "Sweater",
+    "color": "Beige",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Knit+Sweater"
+  },
+  {
+    "id": 13,
+    "title": "Girls Cotton Top",
+    "price": 129,
+    "category": "Girls",
+    "type": "Top",
+    "color": "Light Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Cotton+Top"
+  },
+  {
+    "id": 14,
+    "title": "Men Striped Shirt",
+    "price": 179,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "White-Green",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Striped+Shirt"
+  },
+  {
+    "id": 15,
+    "title": "Women Denim Jacket",
+    "price": 199,
+    "category": "Women",
+    "type": "Jacket",
+    "color": "Light Denim",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Denim+Jacket"
+  },
+  {
+    "id": 16,
+    "title": "Boys Casual Hoodie",
+    "price": 169,
+    "category": "Boys",
+    "type": "Hoodie",
+    "color": "Navy Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Casual+Hoodie"
+  },
+  {
+    "id": 17,
+    "title": "Girls Summer Shorts",
+    "price": 139,
+    "category": "Girls",
+    "type": "Shorts",
+    "color": "Pink",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Summer+Shorts"
+  },
+  {
+    "id": 18,
+    "title": "Men Bomber Jacket",
+    "price": 199,
+    "category": "Men",
+    "type": "Jacket",
+    "color": "Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Bomber+Jacket"
+  },
+  {
+    "id": 19,
+    "title": "Women Casual Dress",
+    "price": 179,
+    "category": "Women",
+    "type": "Dress",
+    "color": "Red",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Casual+Dress"
+  },
+  {
+    "id": 20,
+    "title": "Men Casual Hoodie",
+    "price": 189,
+    "category": "Men",
+    "type": "Hoodie",
+    "color": "Gray",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Casual+Hoodie"
+  },
+  {
+    "id": 21,
+    "title": "Girls Polka Dot Dress",
+    "price": 149,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "White-Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Polka+Dot+Dress"
+  },
+  {
+    "id": 22,
+    "title": "Boys Jogger Pants",
+    "price": 149,
+    "category": "Boys",
+    "type": "Trousers",
+    "color": "Gray",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Jogger+Pants"
+  },
+  {
+    "id": 23,
+    "title": "Women Maxi Dress",
+    "price": 199,
+    "category": "Women",
+    "type": "Dress",
+    "color": "Black Floral",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Maxi+Dress"
+  },
+  {
+    "id": 24,
+    "title": "Men Casual Shorts",
+    "price": 139,
+    "category": "Men",
+    "type": "Shorts",
+    "color": "Khaki",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Casual+Shorts"
+  },
+  {
+    "id": 25,
+    "title": "Women Round Neck T-shirt",
+    "price": 149,
+    "category": "Women",
+    "type": "T-shirt",
+    "color": "Pink",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Round+Neck+Tshirt"
+  },
+  {
+    "id": 26,
+    "title": "Girls Denim Jacket",
+    "price": 169,
+    "category": "Girls",
+    "type": "Jacket",
+    "color": "Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Denim+Jacket"
+  },
+  {
+    "id": 27,
+    "title": "Boys Checkered Shirt",
+    "price": 159,
+    "category": "Boys",
+    "type": "Shirt",
+    "color": "Red-Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Checkered+Shirt"
+  },
+  {
+    "id": 28,
+    "title": "Men Leather Jacket",
+    "price": 199,
+    "category": "Men",
+    "type": "Jacket",
+    "color": "Brown",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Leather+Jacket"
+  },
+  {
+    "id": 29,
+    "title": "Women Pleated Skirt",
+    "price": 149,
+    "category": "Women",
+    "type": "Skirt",
+    "color": "Beige",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Pleated+Skirt"
+  },
+  {
+    "id": 30,
+    "title": "Girls Knit Sweater",
+    "price": 159,
+    "category": "Girls",
+    "type": "Sweater",
+    "color": "Pink",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Knit+Sweater"
+  },
+  {
+    "id": 31,
+    "title": "Men Henley T-shirt",
+    "price": 159,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "Olive",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Henley+Tshirt"
+  },
+  {
+    "id": 32,
+    "title": "Women Sleeveless Top",
+    "price": 139,
+    "category": "Women",
+    "type": "Top",
+    "color": "Light Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Sleeveless+Top"
+  },
+  {
+    "id": 33,
+    "title": "Boys Sports T-shirt",
+    "price": 149,
+    "category": "Boys",
+    "type": "T-shirt",
+    "color": "White",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Sports+Tshirt"
+  },
+  {
+    "id": 34,
+    "title": "Girls Party Dress",
+    "price": 179,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Lavender",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Party+Dress"
+  },
+  {
+    "id": 35,
+    "title": "Men Casual Blazer",
+    "price": 199,
+    "category": "Men",
+    "type": "Blazer",
+    "color": "Dark Gray",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Casual+Blazer"
+  },
+  {
+    "id": 36,
+    "title": "Women Formal Shirt",
+    "price": 159,
+    "category": "Women",
+    "type": "Shirt",
+    "color": "White",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Formal+Shirt"
+  },
+  {
+    "id": 37,
+    "title": "Girls Leggings",
+    "price": 129,
+    "category": "Girls",
+    "type": "Trousers",
+    "color": "Purple",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Leggings"
+  },
+  {
+    "id": 38,
+    "title": "Boys Cargo Shorts",
+    "price": 139,
+    "category": "Boys",
+    "type": "Shorts",
+    "color": "Green",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Cargo+Shorts"
+  },
+  {
+    "id": 39,
+    "title": "Men Sports Joggers",
+    "price": 169,
+    "category": "Men",
+    "type": "Trousers",
+    "color": "Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Sports+Joggers"
+  },
+  {
+    "id": 40,
+    "title": "Women Knit Cardigan",
+    "price": 179,
+    "category": "Women",
+    "type": "Cardigan",
+    "color": "Gray",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Knit+Cardigan"
+  },
+  {
+    "id": 41,
+    "title": "Girls Summer Hat",
+    "price": 129,
+    "category": "Girls",
+    "type": "Accessory",
+    "color": "Yellow",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Summer+Hat"
+  },
+  {
+    "id": 42,
+    "title": "Boys Zip Hoodie",
+    "price": 159,
+    "category": "Boys",
+    "type": "Hoodie",
+    "color": "Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Zip+Hoodie"
+  },
+  {
+    "id": 43,
+    "title": "Women Casual Jeans",
+    "price": 179,
+    "category": "Women",
+    "type": "Trousers",
+    "color": "Denim Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Casual+Jeans"
+  },
+  {
+    "id": 44,
+    "title": "Men Formal Trousers",
+    "price": 189,
+    "category": "Men",
+    "type": "Trousers",
+    "color": "Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Formal+Trousers"
+  },
+  {
+    "id": 45,
+    "title": "Girls Knit Dress",
+    "price": 149,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Pink",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Knit+Dress"
+  },
+  {
+    "id": 46,
+    "title": "Boys Windbreaker Jacket",
+    "price": 179,
+    "category": "Boys",
+    "type": "Jacket",
+    "color": "Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Windbreaker"
+  },
+  {
+    "id": 47,
+    "title": "Women Sleeveless Dress",
+    "price": 179,
+    "category": "Women",
+    "type": "Dress",
+    "color": "Green",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Sleeveless+Dress"
+  },
+  {
+    "id": 48,
+    "title": "Men Checked Casual Shirt",
+    "price": 169,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "Blue-White",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Checked+Shirt"
+  },
+  {
+    "id": 49,
+    "title": "Women Wrap Skirt",
+    "price": 149,
+    "category": "Women",
+    "type": "Skirt",
+    "color": "Black",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Women+Wrap+Skirt"
+  },
+  {
+    "id": 50,
+    "title": "Girls Denim Overalls",
+    "price": 159,
+    "category": "Girls",
+    "type": "Overalls",
+    "color": "Blue",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Girls+Denim+Overalls"
+  },
+  {
+    "id": 51,
+    "title": "Boys Long Sleeve Shirt",
+    "price": 149,
+    "category": "Boys",
+    "type": "Shirt",
+    "color": "White",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Boys+Long+Sleeve+Shirt"
+  },
+  {
+    "id": 52,
+    "title": "Men Casual Vest",
+    "price": 139,
+    "category": "Men",
+    "type": "Vest",
+    "color": "Gray",
+    "image": "https://dummyimage.com/400x500/cccccc/000000&text=Men+Casual+Vest"
+  }
+]
