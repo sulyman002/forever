@@ -40,7 +40,7 @@ const Nav = () => {
           </Link>
           <Link
             onClick={() => setNavBorder("about")}
-            to="#"
+            to="about-us"
             className="uppercase flex flex-col items-center"
           >
             About
@@ -50,7 +50,7 @@ const Nav = () => {
           </Link>
           <Link
             onClick={() => setNavBorder("contact")}
-            to="#"
+            to="contact-us"
             className="uppercase flex flex-col items-center"
           >
             Contact
