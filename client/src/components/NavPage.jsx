@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import assets from "../assets/allData";
 
-const Nav = () => {
+const NavPage = () => {
   const [navBorder, setNavBorder] = useState("home");
 
   return (
@@ -96,4 +96,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default NavPage;

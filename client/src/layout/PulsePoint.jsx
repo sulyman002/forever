@@ -1,7 +1,7 @@
 import React from 'react'
-import Nav from '../components/nav'
 import { Outlet } from 'react-router-dom'
 import Footer from '../components/Footer'
+import NavPage from '../components/NavPage'
 
 
 const PulsePoint = () => {
@@ -9,7 +9,7 @@ const PulsePoint = () => {
     <>
         <div>
             {/* nav component up here */}
-            <Nav />
+            <NavPage />
 
             {/* main components here */}
             <Outlet />
