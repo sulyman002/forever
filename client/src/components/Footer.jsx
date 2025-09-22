@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, Links } from "react-router-dom";
+import { Link, Links, useNavigate } from "react-router-dom";
 
 const Footer = () => {
-    const date = new Date().getFullYear()
+    const date = new Date().getFullYear();
+    const navigate = useNavigate();
   return (
     <>
       <div className="container mx-auto px-6 md:px-0 py-6 ">
@@ -22,12 +23,24 @@ const Footer = () => {
           <div className=" flex flex-col md:flex-row md:justify-between md:items-start items-center justify-center gap-5">
             <div className="flex flex-col space-y-10">
                 <h1 className="hidden md:flex font-semibold text-[22px] leading-[30px] text-[#5A5A5A] ">COMPANY</h1>
-                <ul className="flex items-center text-[#595959] text-[18px] leading-[30px] space-x-6 md:flex-col md:items-start justify-center md:justify-start">
-                    <Link to="/">Home</Link>
-                    <Link to="#">About Us</Link>
-                    <Link to="#">Delivery</Link>
-                    <Link to="#">Privacy policy</Link>
-                </ul>
+                <div className="flex items-center text-[#595959] text-[18px] leading-[30px] space-x-6 md:flex-col md:items-start justify-center md:justify-start">
+                    <div onClick={() => {
+                      navigate("/")
+                      window.scrollTo({top: 0, behavior: "smooth"})
+                    }} >Home</div>
+                    <div onClick={() => {
+                      navigate("/about-us")
+                      window.scrollTo({top: 0, behavior: "smooth"})
+                    }} >About Us</div>
+                    <div onClick={() => {
+                      navigate("/")
+                      window.scrollTo({top: 0, behavior: "smooth"})
+                    }} >Delivery</div>
+                    <div onClick={() => {
+                      navigate("/")
+                      window.scrollTo({top: 0, behavior: "smooth"})
+                    }} >Privacy policy</div>
+                </div>
             </div>
 
             <div className="space-y-10">

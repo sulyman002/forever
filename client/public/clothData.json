@@ -1,260 +1,6 @@
 [
   {
     "id": 1,
-    "title": "Women Floral Off-Shoulder Top",
-    "price": 149,
-    "category": "Women",
-    "type": "Top",
-    "color": "Floral Purple",
-    "image": "/product-pictures/women/women1.png"
-  },
-  {
-    "id": 2,
-    "title": "Women V-neck Blouse",
-    "price": 169,
-    "category": "Women",
-    "type": "Top",
-    "color": "White",
-    "image": "/product-pictures/women/women2.png"
-  },
-  {
-    "id": 3,
-    "title": "Women Casual Hoodie",
-    "price": 189,
-    "category": "Women",
-    "type": "Hoodie",
-    "color": "Gray",
-    "image": "/product-pictures/women/women3.png"
-  },
-  {
-    "id": 4,
-    "title": "Women Pleated Skirt",
-    "price": 159,
-    "category": "Women",
-    "type": "Skirt",
-    "color": "Navy Blue",
-    "image": "/product-pictures/women/women4.png"
-  },
-  {
-    "id": 5,
-    "title": "Women High-Waist Jeans",
-    "price": 199,
-    "category": "Women",
-    "type": "Jeans",
-    "color": "Light Blue",
-    "image": "/product-pictures/women/women5.png"
-  },
-  {
-    "id": 6,
-    "title": "Women Long Sleeve Cardigan",
-    "price": 179,
-    "category": "Women",
-    "type": "Cardigan",
-    "color": "Beige",
-    "image": "/product-pictures/women/women6.png"
-  },
-  {
-    "id": 7,
-    "title": "Women Summer Dress",
-    "price": 189,
-    "category": "Women",
-    "type": "Dress",
-    "color": "Red Floral",
-    "image": "/product-pictures/women/women7.png"
-  },
-  {
-    "id": 8,
-    "title": "Women Leather Jacket",
-    "price": 249,
-    "category": "Women",
-    "type": "Jacket",
-    "color": "Black",
-    "image": "/product-pictures/women/women8.png"
-  },
-  {
-    "id": 9,
-    "title": "Women Crop Top",
-    "price": 129,
-    "category": "Women",
-    "type": "Top",
-    "color": "Pink",
-    "image": "/product-pictures/women/women9.png"
-  },
-  {
-    "id": 10,
-    "title": "Women Wide Leg Pants",
-    "price": 179,
-    "category": "Women",
-    "type": "Pants",
-    "color": "Olive Green",
-    "image": "/product-pictures/women/women10.png"
-  },
-  {
-    "id": 11,
-    "title": "Women Maxi Dress",
-    "price": 209,
-    "category": "Women",
-    "type": "Dress",
-    "color": "Blue",
-    "image": "/product-pictures/women/women11.png"
-  },
-  {
-    "id": 12,
-    "title": "Women Knit Sweater",
-    "price": 159,
-    "category": "Women",
-    "type": "Sweater",
-    "color": "Cream",
-    "image": "/product-pictures/women/women12.png"
-  },
-  {
-    "id": 13,
-    "title": "Women Sleeveless Blouse",
-    "price": 149,
-    "category": "Women",
-    "type": "Top",
-    "color": "Light Green",
-    "image": "/product-pictures/women/women13.png"
-  },
-  {
-    "id": 14,
-    "title": "Women Pencil Skirt",
-    "price": 169,
-    "category": "Women",
-    "type": "Skirt",
-    "color": "Black",
-    "image": "/product-pictures/women/women14.png"
-  },
-
-  {
-    "id": 15,
-    "title": "Men Classic Polo T-shirt",
-    "price": 159,
-    "category": "Men",
-    "type": "T-shirt",
-    "color": "Navy Blue",
-    "image": "/product-pictures/men/men1.png"
-  },
-  {
-    "id": 16,
-    "title": "Men Slim Fit Shirt",
-    "price": 179,
-    "category": "Men",
-    "type": "Shirt",
-    "color": "Sky Blue",
-    "image": "/product-pictures/men/men2.png"
-  },
-  {
-    "id": 17,
-    "title": "Men Round Neck T-shirt",
-    "price": 149,
-    "category": "Men",
-    "type": "T-shirt",
-    "color": "Black",
-    "image": "/product-pictures/men/men3.png"
-  },
-  {
-    "id": 18,
-    "title": "Men Denim Jacket",
-    "price": 229,
-    "category": "Men",
-    "type": "Jacket",
-    "color": "Blue",
-    "image": "/product-pictures/men/men4.png"
-  },
-  {
-    "id": 19,
-    "title": "Men Cargo Pants",
-    "price": 199,
-    "category": "Men",
-    "type": "Pants",
-    "color": "Khaki",
-    "image": "/product-pictures/men/men5.png"
-  },
-  {
-    "id": 20,
-    "title": "Men Hoodie Sweatshirt",
-    "price": 189,
-    "category": "Men",
-    "type": "Hoodie",
-    "color": "Gray",
-    "image": "/product-pictures/men/men6.png"
-  },
-  {
-    "id": 21,
-    "title": "Men Formal Blazer",
-    "price": 259,
-    "category": "Men",
-    "type": "Blazer",
-    "color": "Dark Gray",
-    "image": "/product-pictures/men/men7.png"
-  },
-  {
-    "id": 22,
-    "title": "Men Sleeveless Tank Top",
-    "price": 139,
-    "category": "Men",
-    "type": "Tank",
-    "color": "White",
-    "image": "/product-pictures/men/men8.png"
-  },
-  {
-    "id": 23,
-    "title": "Men Checked Shirt",
-    "price": 169,
-    "category": "Men",
-    "type": "Shirt",
-    "color": "Red & Black",
-    "image": "/product-pictures/men/men9.png"
-  },
-  {
-    "id": 24,
-    "title": "Men Jogger Pants",
-    "price": 179,
-    "category": "Men",
-    "type": "Pants",
-    "color": "Black",
-    "image": "/product-pictures/men/men10.png"
-  },
-  {
-    "id": 25,
-    "title": "Men Bomber Jacket",
-    "price": 239,
-    "category": "Men",
-    "type": "Jacket",
-    "color": "Green",
-    "image": "/product-pictures/men/men11.png"
-  },
-  {
-    "id": 26,
-    "title": "Men Linen Shirt",
-    "price": 159,
-    "category": "Men",
-    "type": "Shirt",
-    "color": "Beige",
-    "image": "/product-pictures/men/men12.png"
-  },
-  {
-    "id": 27,
-    "title": "Men Graphic T-shirt",
-    "price": 149,
-    "category": "Men",
-    "type": "T-shirt",
-    "color": "White",
-    "image": "/product-pictures/men/men13.png"
-  },
-  {
-    "id": 28,
-    "title": "Men Leather Jacket",
-    "price": 279,
-    "category": "Men",
-    "type": "Jacket",
-    "color": "Brown",
-    "image": "/product-pictures/men/men14.png"
-  },
-
-  {
-    "id": 29,
     "title": "Girls Summer Cotton Dress",
     "price": 139,
     "category": "Girls",
@@ -263,170 +9,16 @@
     "image": "/product-pictures/girls/girls1.png"
   },
   {
-    "id": 30,
-    "title": "Girls Printed Skirt",
-    "price": 139,
-    "category": "Girls",
-    "type": "Skirt",
-    "color": "Yellow Floral",
-    "image": "/product-pictures/girls/girls2.png"
+    "id": 2,
+    "title": "Women High-Waist Jeans",
+    "price": 199,
+    "category": "Women",
+    "type": "Jeans",
+    "color": "Light Blue",
+    "image": "/product-pictures/women/women5.png"
   },
   {
-    "id": 31,
-    "title": "Girls Cardigan Sweater",
-    "price": 149,
-    "category": "Girls",
-    "type": "Sweater",
-    "color": "Lavender",
-    "image": "/product-pictures/girls/girls3.png"
-  },
-  {
-    "id": 32,
-    "title": "Girls Denim Shorts",
-    "price": 129,
-    "category": "Girls",
-    "type": "Shorts",
-    "color": "Blue",
-    "image": "/product-pictures/girls/girls4.png"
-  },
-  {
-    "id": 33,
-    "title": "Girls Striped T-shirt",
-    "price": 119,
-    "category": "Girls",
-    "type": "T-shirt",
-    "color": "Pink & White",
-    "image": "/product-pictures/girls/girls5.png"
-  },
-  {
-    "id": 34,
-    "title": "Girls Hoodie Dress",
-    "price": 159,
-    "category": "Girls",
-    "type": "Dress",
-    "color": "Gray",
-    "image": "/product-pictures/girls/girls6.png"
-  },
-  {
-    "id": 35,
-    "title": "Girls Polka Dot Skirt",
-    "price": 129,
-    "category": "Girls",
-    "type": "Skirt",
-    "color": "Red & White",
-    "image": "/product-pictures/girls/girls7.png"
-  },
-  {
-    "id": 36,
-    "title": "Girls Floral Dress",
-    "price": 149,
-    "category": "Girls",
-    "type": "Dress",
-    "color": "Blue Floral",
-    "image": "/product-pictures/girls/girls8.png"
-  },
-  {
-    "id": 37,
-    "title": "Girls Sleeveless Top",
-    "price": 119,
-    "category": "Girls",
-    "type": "Top",
-    "color": "Yellow",
-    "image": "/product-pictures/girls/girls9.png"
-  },
-  {
-    "id": 38,
-    "title": "Girls Leggings",
-    "price": 109,
-    "category": "Girls",
-    "type": "Pants",
-    "color": "Purple",
-    "image": "/product-pictures/girls/girls10.png"
-  },
-  {
-    "id": 39,
-    "title": "Girls Knit Sweater",
-    "price": 139,
-    "category": "Girls",
-    "type": "Sweater",
-    "color": "Beige",
-    "image": "/product-pictures/girls/girls11.png"
-  },
-  {
-    "id": 40,
-    "title": "Girls A-line Dress",
-    "price": 149,
-    "category": "Girls",
-    "type": "Dress",
-    "color": "Green",
-    "image": "/product-pictures/girls/girls12.png"
-  },
-
-  {
-    "id": 41,
-    "title": "Boys Graphic Print T-shirt",
-    "price": 129,
-    "category": "Boys",
-    "type": "T-shirt",
-    "color": "Red",
-    "image": "/product-pictures/boys/boys1.png"
-  },
-  {
-    "id": 42,
-    "title": "Boys Denim Shorts",
-    "price": 139,
-    "category": "Boys",
-    "type": "Shorts",
-    "color": "Denim Blue",
-    "image": "/product-pictures/boys/boys2.png"
-  },
-  {
-    "id": 43,
-    "title": "Boys Striped Polo",
-    "price": 149,
-    "category": "Boys",
-    "type": "Polo",
-    "color": "Blue & White",
-    "image": "/product-pictures/boys/boys3.png"
-  },
-  {
-    "id": 44,
-    "title": "Boys Hoodie Sweatshirt",
-    "price": 159,
-    "category": "Boys",
-    "type": "Hoodie",
-    "color": "Gray",
-    "image": "/product-pictures/boys/boys4.png"
-  },
-  {
-    "id": 45,
-    "title": "Boys Cargo Pants",
-    "price": 169,
-    "category": "Boys",
-    "type": "Pants",
-    "color": "Khaki",
-    "image": "/product-pictures/boys/boys5.png"
-  },
-  {
-    "id": 46,
-    "title": "Boys Formal Shirt",
-    "price": 179,
-    "category": "Boys",
-    "type": "Shirt",
-    "color": "White",
-    "image": "/product-pictures/boys/boys6.png"
-  },
-  {
-    "id": 47,
-    "title": "Boys Sports Jersey",
-    "price": 159,
-    "category": "Boys",
-    "type": "Jersey",
-    "color": "Blue",
-    "image": "/product-pictures/boys/boys7.png"
-  },
-  {
-    "id": 48,
+    "id": 3,
     "title": "Boys Sleeveless Tank",
     "price": 119,
     "category": "Boys",
@@ -435,7 +27,16 @@
     "image": "/product-pictures/boys/boys8.png"
   },
   {
-    "id": 49,
+    "id": 4,
+    "title": "Men Slim Fit Shirt",
+    "price": 179,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "Sky Blue",
+    "image": "/product-pictures/men/men2.png"
+  },
+  {
+    "id": 5,
     "title": "Boys Checkered Shirt",
     "price": 149,
     "category": "Boys",
@@ -444,7 +45,34 @@
     "image": "/product-pictures/boys/boys9.png"
   },
   {
-    "id": 50,
+    "id": 6,
+    "title": "Women Maxi Dress",
+    "price": 209,
+    "category": "Women",
+    "type": "Dress",
+    "color": "Blue",
+    "image": "/product-pictures/women/women11.png"
+  },
+  {
+    "id": 7,
+    "title": "Girls Denim Shorts",
+    "price": 129,
+    "category": "Girls",
+    "type": "Shorts",
+    "color": "Blue",
+    "image": "/product-pictures/girls/girls4.png"
+  },
+  {
+    "id": 8,
+    "title": "Women V-neck Blouse",
+    "price": 169,
+    "category": "Women",
+    "type": "Top",
+    "color": "White",
+    "image": "/product-pictures/women/women2.png"
+  },
+  {
+    "id": 9,
     "title": "Boys Jogger Pants",
     "price": 159,
     "category": "Boys",
@@ -453,7 +81,313 @@
     "image": "/product-pictures/boys/boys10.png"
   },
   {
-    "id": 51,
+    "id": 10,
+    "title": "Men Checked Shirt",
+    "price": 169,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "Red & Black",
+    "image": "/product-pictures/men/men9.png"
+  },
+  {
+    "id": 11,
+    "title": "Boys Striped Polo",
+    "price": 149,
+    "category": "Boys",
+    "type": "Polo",
+    "color": "Blue & White",
+    "image": "/product-pictures/boys/boys3.png"
+  },
+  {
+    "id": 12,
+    "title": "Girls A-line Dress",
+    "price": 149,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Green",
+    "image": "/product-pictures/girls/girls12.png"
+  },
+  {
+    "id": 13,
+    "title": "Men Sleeveless Tank Top",
+    "price": 139,
+    "category": "Men",
+    "type": "Tank",
+    "color": "White",
+    "image": "/product-pictures/men/men8.png"
+  },
+  {
+    "id": 14,
+    "title": "Boys Cargo Pants",
+    "price": 169,
+    "category": "Boys",
+    "type": "Pants",
+    "color": "Khaki",
+    "image": "/product-pictures/boys/boys5.png"
+  },
+  {
+    "id": 15,
+    "title": "Girls Printed Skirt",
+    "price": 139,
+    "category": "Girls",
+    "type": "Skirt",
+    "color": "Yellow Floral",
+    "image": "/product-pictures/girls/girls2.png"
+  },
+  {
+    "id": 16,
+    "title": "Men Jogger Pants",
+    "price": 179,
+    "category": "Men",
+    "type": "Pants",
+    "color": "Black",
+    "image": "/product-pictures/men/men10.png"
+  },
+  {
+    "id": 17,
+    "title": "Men Leather Jacket",
+    "price": 279,
+    "category": "Men",
+    "type": "Jacket",
+    "color": "Brown",
+    "image": "/product-pictures/men/men14.png"
+  },
+  {
+    "id": 18,
+    "title": "Men Hoodie Sweatshirt",
+    "price": 189,
+    "category": "Men",
+    "type": "Hoodie",
+    "color": "Gray",
+    "image": "/product-pictures/men/men6.png"
+  },
+  {
+    "id": 19,
+    "title": "Women Summer Dress",
+    "price": 189,
+    "category": "Women",
+    "type": "Dress",
+    "color": "Red Floral",
+    "image": "/product-pictures/women/women7.png"
+  },
+  {
+    "id": 20,
+    "title": "Girls Floral Dress",
+    "price": 149,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Blue Floral",
+    "image": "/product-pictures/girls/girls8.png"
+  },
+  {
+    "id": 21,
+    "title": "Women Casual Hoodie",
+    "price": 189,
+    "category": "Women",
+    "type": "Hoodie",
+    "color": "Gray",
+    "image": "/product-pictures/women/women3.png"
+  },
+  {
+    "id": 22,
+    "title": "Boys Denim Shorts",
+    "price": 139,
+    "category": "Boys",
+    "type": "Shorts",
+    "color": "Denim Blue",
+    "image": "/product-pictures/boys/boys2.png"
+  },
+  {
+    "id": 23,
+    "title": "Girls Polka Dot Skirt",
+    "price": 129,
+    "category": "Girls",
+    "type": "Skirt",
+    "color": "Red & White",
+    "image": "/product-pictures/girls/girls7.png"
+  },
+  {
+    "id": 24,
+    "title": "Men Formal Blazer",
+    "price": 259,
+    "category": "Men",
+    "type": "Blazer",
+    "color": "Dark Gray",
+    "image": "/product-pictures/men/men7.png"
+  },
+  {
+    "id": 25,
+    "title": "Women Knit Sweater",
+    "price": 159,
+    "category": "Women",
+    "type": "Sweater",
+    "color": "Cream",
+    "image": "/product-pictures/women/women12.png"
+  },
+  {
+    "id": 26,
+    "title": "Boys Graphic Print T-shirt",
+    "price": 129,
+    "category": "Boys",
+    "type": "T-shirt",
+    "color": "Red",
+    "image": "/product-pictures/boys/boys1.png"
+  },
+  {
+    "id": 27,
+    "title": "Boys Formal Shirt",
+    "price": 179,
+    "category": "Boys",
+    "type": "Shirt",
+    "color": "White",
+    "image": "/product-pictures/boys/boys6.png"
+  },
+  {
+    "id": 28,
+    "title": "Boys Denim Jacket",
+    "price": 189,
+    "category": "Boys",
+    "type": "Jacket",
+    "color": "Blue",
+    "image": "/product-pictures/boys/boys12.png"
+  },
+  {
+    "id": 29,
+    "title": "Women Wide Leg Pants",
+    "price": 179,
+    "category": "Women",
+    "type": "Pants",
+    "color": "Olive Green",
+    "image": "/product-pictures/women/women10.png"
+  },
+  {
+    "id": 30,
+    "title": "Women Pleated Skirt",
+    "price": 159,
+    "category": "Women",
+    "type": "Skirt",
+    "color": "Navy Blue",
+    "image": "/product-pictures/women/women4.png"
+  },
+  {
+    "id": 31,
+    "title": "Girls Hoodie Dress",
+    "price": 159,
+    "category": "Girls",
+    "type": "Dress",
+    "color": "Gray",
+    "image": "/product-pictures/girls/girls6.png"
+  },
+  {
+    "id": 32,
+    "title": "Men Graphic T-shirt",
+    "price": 149,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "White",
+    "image": "/product-pictures/men/men13.png"
+  },
+  {
+    "id": 33,
+    "title": "Boys Hoodie Sweatshirt",
+    "price": 159,
+    "category": "Boys",
+    "type": "Hoodie",
+    "color": "Gray",
+    "image": "/product-pictures/boys/boys4.png"
+  },
+  {
+    "id": 34,
+    "title": "Men Bomber Jacket",
+    "price": 239,
+    "category": "Men",
+    "type": "Jacket",
+    "color": "Green",
+    "image": "/product-pictures/men/men11.png"
+  },
+  {
+    "id": 35,
+    "title": "Women Leather Jacket",
+    "price": 249,
+    "category": "Women",
+    "type": "Jacket",
+    "color": "Black",
+    "image": "/product-pictures/women/women8.png"
+  },
+  {
+    "id": 36,
+    "title": "Women Pencil Skirt",
+    "price": 169,
+    "category": "Women",
+    "type": "Skirt",
+    "color": "Black",
+    "image": "/product-pictures/women/women14.png"
+  },
+  {
+    "id": 37,
+    "title": "Girls Knit Sweater",
+    "price": 139,
+    "category": "Girls",
+    "type": "Sweater",
+    "color": "Beige",
+    "image": "/product-pictures/girls/girls11.png"
+  },
+  {
+    "id": 38,
+    "title": "Girls Sleeveless Top",
+    "price": 119,
+    "category": "Girls",
+    "type": "Top",
+    "color": "Yellow",
+    "image": "/product-pictures/girls/girls9.png"
+  },
+  {
+    "id": 39,
+    "title": "Men Classic Polo T-shirt",
+    "price": 159,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "Navy Blue",
+    "image": "/product-pictures/men/men1.png"
+  },
+  {
+    "id": 40,
+    "title": "Girls Leggings",
+    "price": 109,
+    "category": "Girls",
+    "type": "Pants",
+    "color": "Purple",
+    "image": "/product-pictures/girls/girls10.png"
+  },
+  {
+    "id": 41,
+    "title": "Girls Striped T-shirt",
+    "price": 119,
+    "category": "Girls",
+    "type": "T-shirt",
+    "color": "Pink & White",
+    "image": "/product-pictures/girls/girls5.png"
+  },
+  {
+    "id": 42,
+    "title": "Women Long Sleeve Cardigan",
+    "price": 179,
+    "category": "Women",
+    "type": "Cardigan",
+    "color": "Beige",
+    "image": "/product-pictures/women/women6.png"
+  },
+  {
+    "id": 43,
+    "title": "Women Sleeveless Blouse",
+    "price": 149,
+    "category": "Women",
+    "type": "Top",
+    "color": "Light Green",
+    "image": "/product-pictures/women/women13.png"
+  },
+  {
+    "id": 44,
     "title": "Boys Knit Sweater",
     "price": 139,
     "category": "Boys",
@@ -462,12 +396,75 @@
     "image": "/product-pictures/boys/boys11.png"
   },
   {
-    "id": 52,
-    "title": "Boys Denim Jacket",
-    "price": 189,
-    "category": "Boys",
+    "id": 45,
+    "title": "Men Denim Jacket",
+    "price": 229,
+    "category": "Men",
     "type": "Jacket",
     "color": "Blue",
-    "image": "/product-pictures/boys/boys12.png"
+    "image": "/product-pictures/men/men4.png"
+  },
+  {
+    "id": 46,
+    "title": "Men Round Neck T-shirt",
+    "price": 149,
+    "category": "Men",
+    "type": "T-shirt",
+    "color": "Black",
+    "image": "/product-pictures/men/men3.png"
+  },
+  {
+    "id": 47,
+    "title": "Men Linen Shirt",
+    "price": 159,
+    "category": "Men",
+    "type": "Shirt",
+    "color": "Beige",
+    "image": "/product-pictures/men/men12.png"
+  },
+  {
+    "id": 48,
+    "title": "Boys Sports Jersey",
+    "price": 159,
+    "category": "Boys",
+    "type": "Jersey",
+    "color": "Blue",
+    "image": "/product-pictures/boys/boys7.png"
+  },
+  {
+    "id": 49,
+    "title": "Women Floral Off-Shoulder Top",
+    "price": 149,
+    "category": "Women",
+    "type": "Top",
+    "color": "Floral Purple",
+    "image": "/product-pictures/women/women1.png"
+  },
+  {
+    "id": 50,
+    "title": "Men Cargo Pants",
+    "price": 199,
+    "category": "Men",
+    "type": "Pants",
+    "color": "Khaki",
+    "image": "/product-pictures/men/men5.png"
+  },
+  {
+    "id": 51,
+    "title": "Girls Cardigan Sweater",
+    "price": 149,
+    "category": "Girls",
+    "type": "Sweater",
+    "color": "Lavender",
+    "image": "/product-pictures/girls/girls3.png"
+  },
+  {
+    "id": 52,
+    "title": "Women Crop Top",
+    "price": 129,
+    "category": "Women",
+    "type": "Top",
+    "color": "Pink",
+    "image": "/product-pictures/women/women9.png"
   }
-]
+] 

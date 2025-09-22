@@ -5,19 +5,27 @@ import returnPolicy from "../assets/returnPolicy.svg";
 import customerSupport from "../assets/customerSupport.svg";
 import Subscribe from "../components/Subscribe";
 import axios from "axios";
+import { useDispatch } from "react-redux";
+import { setProduct } from "../Redux/ClothDataSlice";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [clothData, setClothData] = useState([]);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     try {
       axios
         .get("/public/clothData.json")
-        .then((resp) => setClothData(resp.data));
+        .then((resp) => {
+          setClothData(resp.data);
+          dispatch(setProduct(resp.data));
+        })
     } catch (error) {
       console.error(`No data found: ${error}`);
     }
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="container mx-auto px-6 md:px-0">
@@ -56,17 +64,17 @@ const HomePage = () => {
           </p>
         </div>
         {/* map the data here */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8 space-y-10">
-          {clothData.slice(0, 10).map((item, index) => (
-            <div className="flex flex-col gap-4" key={index}>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8 space-y-2">
+          {clothData.slice(10, 20).map((item, index) => (
+            <div onClick={() => navigate(`/all-collections/${item.id}`)} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md" key={index}>
               <div className=" ">
                 <img
                   src={item.image}
                   alt="product image"
-                  className="h-[300px]"
+                  className="md:h-[300px] w-full rounded-t-md"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4">
                 <p className="font-500 font-medium text-[14px] text-[#494949] ">
                   {item.title}
                 </p>
@@ -92,16 +100,16 @@ const HomePage = () => {
         </div>
         {/* map the data here */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8 space-y-10">
-          {clothData.slice(0, 5).map((item, index) => (
-            <div className="flex flex-col gap-4" key={index}>
+          {clothData.slice(22, 27).map((item, index) => (
+            <div key={index} onClick={() => navigate(`/all-collections/${item.id}`)} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md">
               <div className=" ">
                 <img
                   src={item.image}
                   alt="product image"
-                  className="h-[300px]"
+                  className="md:h-[300px] w-full"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4">
                 <p className="font-500 font-medium text-[14px] text-[#494949] ">
                   {item.title}
                 </p>

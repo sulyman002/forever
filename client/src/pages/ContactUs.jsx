@@ -31,7 +31,7 @@ const ContactUs = () => {
             </p>
             <div className="flex flex-col gap-6">
               <h2 className="font-600 font-semibold text-[24px] text-[#4E4E4E] uppercase ">
-                Careers at Forever
+                Careers at Pulsepoint
               </h2>
               <p className="text-[#6D6D6D] text-[18px] ">
                 Learn more about our teams and job openings.

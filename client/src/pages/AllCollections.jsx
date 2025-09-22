@@ -1,17 +1,28 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const AllCollections = () => {
-    const [show, setShow] = useState(false);
-    const handleShowFilter = () => {
-        setShow(!show)
-        console.log(`show is : ${show}`)
-    }
+  const [show, setShow] = useState(false);
+  const handleShowFilter = () => {
+    setShow(!show);
+    console.log(`show is : ${show}`);
+  };
+
+  const productData = useSelector((state) => state.clothRed.product);
+
+  console.log(productData[0]?.title);
+
+  const navigate = useNavigate();
+
   return (
     <div className="py-16 container mx-auto px-6 lg:px-0">
       <div className="flex gap-10 ">
         {/* Filter container */}
         <div className="md:w-1/6 flex-col gap-4 hidden md:flex">
           <h2 className="text-[#343434] text-[25px] ">FILTERS</h2>
+          <p className="">lorem</p>
+          <p className=""></p>
           {/* filter box 1 */}
           <div className="border border-[#C8C8C8]/40 flex flex-col p-4 gap-3">
             <p className="uppercase text-[16px] ">Categories</p>
@@ -97,14 +108,33 @@ const AllCollections = () => {
             </h1>
             <select name="" id="" className="border border-gray-300 py-3 px-3">
               <option value="low2high" className="text-[16px] text-[#272727] ">
-                Sort by:
-                Price: Low To High
+                Sort by: Price: Low To High
               </option>
             </select>
           </div>
-
+          {/* All product data is mapped here */}
           <div className="mt-8">
-            {}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 space-y-2">
+              {productData?.map((item, index) => (
+                <div onClick={() => navigate(`/all-collections/${item.id}`)} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md" key={index}>
+                  <div className=" ">
+                    <img
+                      src={item.image}
+                      alt="product image"
+                      className="md:h-[300px] w-full rounded-t-md"
+                    />
+                  </div>
+                  <div className="flex flex-col p-4">
+                    <p className="font-500 font-medium text-[14px] text-[#494949] ">
+                      {item.title}
+                    </p>
+                    <p className="font-500 font-medium text-[16px] text-[#494949] ">
+                      ${item.price}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           {/* FOR MOBILE */}
           <div onClick={handleShowFilter} className="mt-8 flex mb-6 lg:hidden">
@@ -114,84 +144,89 @@ const AllCollections = () => {
           </div>
 
           {show && (
-             <div className="flex flex-col gap-4">
-          
-          {/* filter box 1 */}
-          <div className="border border-[#C8C8C8]/40 flex flex-col p-4 gap-3">
-            <p className="uppercase text-[16px] ">Categories</p>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="man" />
-              <span className="font-300 text-[16px] text-[#272727] ">Men</span>
+            <div className="flex flex-col gap-4">
+              {/* filter box 1 */}
+              <div className="border border-[#C8C8C8]/40 flex flex-col p-4 gap-3">
+                <p className="uppercase text-[16px] ">Categories</p>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="man" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Men
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="women" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Women
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="girls" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Girls
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="boys" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Boys
+                  </span>
+                </div>
+              </div>
+              {/* Filter box 2 */}
+              {/* T-shirt, Top, Dress, Trousers, Hoodie, Jacket, Skirt, Shorts */}
+              <div className="border border-[#C8C8C8]/40 flex flex-col p-4 gap-3">
+                <p className="uppercase text-[16px] ">Type</p>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="tShirt" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    T-shirt
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="top" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Top
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="dress" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Dress
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="trousers" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Trousers
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="hoodie" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Hoodie
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="jacket" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Jacket
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="skirt" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Skirt
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input type="checkbox" name="shorts" />
+                  <span className="font-300 text-[16px] text-[#272727] ">
+                    Short
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="women" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Women
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="girls" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Girls
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="boys" />
-              <span className="font-300 text-[16px] text-[#272727] ">Boys</span>
-            </div>
-          </div>
-          {/* Filter box 2 */}
-          {/* T-shirt, Top, Dress, Trousers, Hoodie, Jacket, Skirt, Shorts */}
-          <div className="border border-[#C8C8C8]/40 flex flex-col p-4 gap-3">
-            <p className="uppercase text-[16px] ">Type</p>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="tShirt" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                T-shirt
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="top" />
-              <span className="font-300 text-[16px] text-[#272727] ">Top</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="dress" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Dress
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="trousers" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Trousers
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="hoodie" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Hoodie
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="jacket" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Jacket
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="skirt" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Skirt
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <input type="checkbox" name="shorts" />
-              <span className="font-300 text-[16px] text-[#272727] ">
-                Short
-              </span>
-            </div>
-          </div>
-        </div>
           )}
         </div>
       </div>
