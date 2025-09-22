@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import ForeverLayout from "./layout/foreverLayout";
+import ForeverLayout from "./layout/ForeverLayout.jsx";
 import HomePage from "./pages/HomePage";
 import AllCollections from "./pages/AllCollections";
 import ContactUs from "./pages/ContactUs";
