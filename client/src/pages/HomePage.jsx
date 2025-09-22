@@ -12,7 +12,7 @@ const HomePage = () => {
   useEffect(() => {
     try {
       axios
-        .get("../public/clothData.json")
+        .get("/public/clothData.json")
         .then((resp) => setClothData(resp.data));
     } catch (error) {
       console.error(`No data found: ${error}`);
