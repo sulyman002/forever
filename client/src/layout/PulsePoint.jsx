@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 
-const ForeverLayout = () => {
+const PulsePoint = () => {
   return (
     <>
         <div>
@@ -22,4 +22,4 @@ const ForeverLayout = () => {
   )
 }
 
-export default ForeverLayout
+export default PulsePoint;
