@@ -6,7 +6,7 @@ import dullStar from "../assets/star_dull_icon.svg";
 
 const ProductPage = () => {
   const data = useSelector((state) => state.clothRed.product);
-  console.log(data);
+
 
   const navigate = useNavigate()
   const param = useParams();
