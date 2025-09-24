@@ -1,11 +1,40 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import fullStar from "../assets/star_icon.svg";
 import dullStar from "../assets/star_dull_icon.svg";
+import { setCartData, setSize } from "../Redux/CartDataSlice";
+// import { setCartData } from "../Redux/CartDataSlice";
+import { toast } from "sonner";
+
 
 const ProductPage = () => {
   const data = useSelector((state) => state.clothRed.product);
+
+
+  const dispatch = useDispatch();
+
+ 
+  const handleAddToCart = (dataValue) => {
+    dispatch(setCartData(dataValue))
+  }
+
+  const sizes = ["S", "P", "L", "XL", "XXL"]
+
+    dispatch(setSize(sizes))
+
+  const sizeData = useSelector((state) => state.cartRed.size)
+
+
+
+  
+
+ 
+
+
+
+
+
 
 
   const navigate = useNavigate()
@@ -84,10 +113,12 @@ const ProductPage = () => {
               Select Size
             </h3>
             <div className="flex items-center gap-3">
-              <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
-                S
+             {sizeData.map((size) => (
+               <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
+                {size}
               </div>
-              <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
+             ))}
+              {/* <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
                 M
               </div>
               <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
@@ -98,11 +129,16 @@ const ProductPage = () => {
               </div>
               <div className="h-[61px] w-[61px] flex items-center justify-center active:border-3px active:border-[#FF8551] border border-[#EBEBEB] text-[16px] cursor-pointer hover:border-[#FF8551] ">
                 XXL
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="py-6">
-            <div className="bg-[#1D1D1D] text-white font-600 font-semibold text-[16px] flex items-center justify-center w-[204px] h-[59px] ">
+            <div onClick={() => {
+              handleAddToCart(productData);
+              setTimeout(() => {
+                toast.success("product added to cart successfully")
+              }, 500);
+            }} className="bg-[#1D1D1D] text-white font-600 font-semibold text-[16px] flex items-center justify-center w-[204px] h-[59px] ">
               ADD TO CART
             </div>
           </div>

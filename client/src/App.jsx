@@ -12,12 +12,15 @@ import Store, { persistor } from "./Redux/Store.js";
 import { PersistGate } from "redux-persist/integration/react";
 import ProductPage from "./pages/ProductPage.jsx";
 import OrderPage from "./pages/OrderPage.jsx";
+import { Toaster } from "sonner";
+import CartPage from "./pages/CartPage.jsx";
 
 const App = () => {
   return (
     <>
       <Provider store={Store}>
         <PersistGate persistor={persistor}>
+          <Toaster position="top-right" />
           <Routes>
             <Route path="/" element={<PulsePoint />}>
               <Route index element={<HomePage />} />
@@ -30,6 +33,7 @@ const App = () => {
               <Route path="sign-in" element={<SignIn />} />
               <Route path="all-collections/:id" element={<ProductPage />} />
               <Route path="order-page" element={<OrderPage />} />
+              <Route path="cart" element={<CartPage />} />
             </Route>
           </Routes>
         </PersistGate>

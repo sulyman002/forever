@@ -2,14 +2,12 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import assets from "../assets/allData";
 import { useSelector, useDispatch } from "react-redux";
-import { setInput } from "../Redux/InputSlice.js"
-
+import { setInput } from "../Redux/InputSlice.js";
 
 const NavPage = () => {
-
   const dispatch = useDispatch();
   const searchValue = useSelector((state) => state.inputRed.dataInput);
-
+  const cartData = useSelector((state) => state.cartRed.cartData);
 
   const [navBorder, setNavBorder] = useState("home");
   const [openHamburger, setOpenHamburger] = useState(false);
@@ -17,7 +15,7 @@ const NavPage = () => {
 
   const handleOpenProfile = () => {
     setOpenProfile(!openProfile);
-  }
+  };
 
   const handleToggleHamburger = () => {
     setOpenHamburger(!openHamburger);
@@ -94,41 +92,47 @@ const NavPage = () => {
               alt="searchIcon"
               className=" w-[18px] md:w-[24px] cursor-pointer"
             />
-           
-              <img
+
+            <img
               onClick={() => {
                 handleOpenProfile();
                 console.log("you are about to open profile");
-                
-                
-
               }}
               src={assets.navIcons.profile}
               alt="profileIcon"
               className="w-[18px] md:w-[24px] cursor-pointer"
             />
             {/* Profile Container */}
-            {openProfile && <div className=" fixed group-hover top-[110px] w-[200px] p-6  bg-[#F8F8F8] rounded-[4px] shadow flex flex-col gap-4 ">
-                <p className="text-[#5B5B5B] text-[18px] cursor-pointer ">My Profile</p>
-                <p onClick={() => {
-                  navigate("/order-page");
-                  handleOpenProfile();
-                }} className="text-[#5B5B5B] text-[18px] cursor-pointer ">Orders</p>
-                <p className="text-[#5B5B5B] text-[18px] cursor-pointer ">Logout</p>
-              </div>}
+            {openProfile && (
+              <div className=" fixed group-hover top-[110px] w-[200px] p-6  bg-[#F8F8F8] rounded-[4px] shadow flex flex-col gap-4 ">
+                <p className="text-[#5B5B5B] text-[18px] cursor-pointer ">
+                  My Profile
+                </p>
+                <p
+                  onClick={() => {
+                    navigate("/order-page");
+                    handleOpenProfile();
+                  }}
+                  className="text-[#5B5B5B] text-[18px] cursor-pointer "
+                >
+                  Orders
+                </p>
+                <p className="text-[#5B5B5B] text-[18px] cursor-pointer ">
+                  Logout
+                </p>
+              </div>
+            )}
 
-            
             {/* Profile container */}
-      
 
-            <div className="relative">
+            <div onClick={() => navigate("/cart")} className="relative cursor-pointer">
               <img
                 src={assets.navIcons.cart}
                 alt="cartIcon"
                 className="w-[18px] md:w-[24px] cursor-pointer"
               />
               <p className="absolute bottom-[-6px] right-[-5px] font-semibold text-white h-[18px] w-[18px] rounded-full bg-black text-center text-[13px]">
-                1
+                {cartData.length}
               </p>
             </div>
           </div>
@@ -223,7 +227,6 @@ const NavPage = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };
