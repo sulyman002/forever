@@ -17,7 +17,7 @@ const HomePage = () => {
   useEffect(() => {
     try {
       axios
-        .get("/public/clothData.json")
+        .get("/clothData.json")
         .then((resp) => {
           setClothData(resp.data);
           dispatch(setProduct(resp.data));
