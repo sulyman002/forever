@@ -33,7 +33,7 @@ const NavPage = () => {
       <div className="py-6 flex justify-between items-center border-b border-gray-200 px-6 md:px-0">
         {/* company name */}
         <div
-          to="/"
+          onClick={() => navigate("/")}
           className="uppercase flex items-center text-[25px] md:text-[46px] font-bold font-[Audiowide] "
         >
           Pulsepoint<span className="text-[#C586A5] text-[60px] ">.</span>

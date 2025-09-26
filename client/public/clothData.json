@@ -6,7 +6,7 @@
     "category": "Girls",
     "type": "Dress",
     "color": "Pastel Pink",
-    "image": "/public/product-pictures/girls/girls1.png"
+    "image": "/product-pictures/girls/girls1.png"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "category": "Women",
     "type": "Jeans",
     "color": "Light Blue",
-    "image": "/public/product-pictures/women/women5.png"
+    "image": "/product-pictures/women/women5.png"
   },
   {
     "id": 3,
@@ -87,7 +87,7 @@
     "category": "Men",
     "type": "Shirt",
     "color": "Red & Black",
-    "image": "/public/product-pictures/men/men9.png"
+    "image": "/product-pictures/men/men9.png"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "category": "Boys",
     "type": "Polo",
     "color": "Blue & White",
-    "image": "/public/product-pictures/boys/boys3.png"
+    "image": "/product-pictures/boys/boys3.png"
   },
   {
     "id": 12,
