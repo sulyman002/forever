@@ -211,7 +211,11 @@ const AllCollections = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 space-y-2">
               {filteredData?.map((item, index) => (
                 <div
-                  onClick={() => navigate(`/all-collections/${item.id}`)}
+                  onClick={() => {
+                    navigate(`/all-collections/${item.id}`);
+                    window.scrollTo({top: 0, behavior: "smooth"});
+                    
+                  }}
                   className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md"
                   key={index}
                 >

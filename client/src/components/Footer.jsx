@@ -23,7 +23,7 @@ const Footer = () => {
           <div className=" flex flex-col md:flex-row md:justify-between md:items-start items-center justify-center gap-5">
             <div className="flex flex-col space-y-10">
                 <h1 className="hidden md:flex font-semibold text-[22px] leading-[30px] text-[#5A5A5A] ">COMPANY</h1>
-                <div className="flex items-center text-[#595959] text-[18px] leading-[30px] space-x-6 md:flex-col md:items-start justify-center md:justify-start">
+                <div className="flex items-center text-center  text-[#595959] text-[18px] leading-[30px] space-x-6 flex-col md:items-start justify-center md:justify-start">
                     <div onClick={() => {
                       navigate("/")
                       window.scrollTo({top: 0, behavior: "smooth"})

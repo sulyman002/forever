@@ -9,10 +9,15 @@ import {
   cartDecrement,
   removeFromCart,
 } from "../Redux/CartDataSlice";
+// import { AiOutlineShoppingCart } from "react-icons/ai";
+import { MdShoppingCart } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
+// import { FiShoppingCart } from "react-icons/fi";
 
 const CartPage = () => {
   const cartData = useSelector((state) => state.cartRed.cartData);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   console.log(cartData);
 
@@ -24,6 +29,7 @@ const CartPage = () => {
 
   console.log(getNew);
 
+
   return (
     <div className="mx-auto container ">
       <div className="py-20 px-6 md:px-0">
@@ -33,65 +39,81 @@ const CartPage = () => {
         </h1>
       </div>
       {/* Display Cart */}
-      <div className="flex flex-col px-6 md:px-0">
-        {cartData.map((item, index) => (
-          <div
-            key={index}
-            className="flex md:items-center md:flex-row flex-col py-4 gap-4 justify-between border-y border-gray-300/70 "
-          >
-            <div className="flex items-center gap-3 md:w-[500px]">
-              <div className="">
-                <img
-                  src={item.image}
-                  alt="product image"
-                  className="w-[114px] h-full  "
-                />
-              </div>
-              <div className="flex flex-col gap-3">
-                <p className="text-[#494949] font-500 font-medium text-[22px] ">
-                  {item.title}
-                </p>
-                <div className="flex items-center gap-3 text-[#494949] font-300 text-[20px] ">
-                  <p className="">${item.price}</p>
-                  <p className="">Quantity: 1</p>
-                  <p className="">Size: L</p>
-                </div>
-                <div className="text-[18px]">
-                  Date: <span className="text-[#989898]">25, May, 2024</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between md:w-2/4 w-full">
-              <div className="flex items-center px-6 w-[140px] h-[50px] justify-between border border-[#DFDFDF]">
-                <div className="">{item.quantity}</div>
-                <div className="flex flex-col gap-1 items-center">
-                  <img
-                    onClick={() => dispatch(cartIncrement(item.id))}
-                    src={increment}
-                    alt="increment"
-                    className="h-[13px] w-[15px] "
-                  />
-                  <img
-                    onClick={() => dispatch(cartDecrement(item.id))}
-                    src={decrement}
-                    alt="decrement"
-                    className="h-[13px] w-[15px] "
-                  />
-                </div>
-              </div>
-              <div className="cursor-pointer ">
-                <img
-                  onClick={() => dispatch(removeFromCart(item.id))}
-                  src={bin_icon}
-                  alt="bin icon"
-                  className="w-[25px] h-[25px] "
-                />
-              </div>
-            </div>
+      {cartData.length === 0 ? (
+        <div className="flex items-center justify-center flex-col gap-6 ">
+          <p className="text-xl md:text-2xl font-bold font-600 text-red-700/50 ">
+         
+          <div className="w-full flex items-center justify-center"><MdShoppingCart className="size-10 " /></div>
+            Cart is empty go back to Store
+          </p>
+          <div onClick={() => {
+            navigate("/all-collections")
+            window.scrollTo({top: 0, behavior: "smooth"});
+          }} className="bg-gray-800 hover:bg-gray-400 cursor-pointer text-white font-600 font-semibold text-[16px] flex items-center justify-center px-8 py-[5px] ">
+            Store
           </div>
-        ))}
-      </div>
+        </div>
+      ) : (
+        <div className="flex flex-col px-6 md:px-0">
+          {cartData.map((item, index) => (
+            <div
+              key={index}
+              className="flex md:items-center md:flex-row flex-col py-4 gap-4 justify-between border-y border-gray-300/70 "
+            >
+              <div className="flex items-center gap-3 md:w-[500px]">
+                <div className="">
+                  <img
+                    src={item.image}
+                    alt="product image"
+                    className="w-[114px] h-full  "
+                  />
+                </div>
+                <div className="flex flex-col gap-3">
+                  <p className="text-[#494949] font-500 font-medium text-[22px] ">
+                    {item.title}
+                  </p>
+                  <div className="flex items-center gap-3 text-[#494949] font-300 text-[20px] ">
+                    <p className="">${item.price}</p>
+                    <p className="">Quantity: 1</p>
+                    <p className="">Size: L</p>
+                  </div>
+                  <div className="text-[18px]">
+                    Date: <span className="text-[#989898]">25, May, 2024</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between md:w-2/4 w-full">
+                <div className="flex items-center px-6 w-[140px] h-[50px] justify-between border border-[#DFDFDF]">
+                  <div className="">{item.quantity}</div>
+                  <div className="flex flex-col gap-1 items-center">
+                    <img
+                      onClick={() => dispatch(cartIncrement(item.id))}
+                      src={increment}
+                      alt="increment"
+                      className="h-[13px] w-[15px] "
+                    />
+                    <img
+                      onClick={() => dispatch(cartDecrement(item.id))}
+                      src={decrement}
+                      alt="decrement"
+                      className="h-[13px] w-[15px] "
+                    />
+                  </div>
+                </div>
+                <div className="cursor-pointer ">
+                  <img
+                    onClick={() => dispatch(removeFromCart(item.id))}
+                    src={bin_icon}
+                    alt="bin icon"
+                    className="w-[25px] h-[25px] "
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Check Out */}
       <div className="w-full flex items-start justify-end my-10 ">
