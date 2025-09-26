@@ -36,7 +36,7 @@ const NavPage = () => {
           onClick={() => navigate("/")}
           className="uppercase flex items-center text-[25px] md:text-[46px] font-bold font-[Audiowide] "
         >
-          Pulsepoint<span className="text-[#C586A5] text-[60px] ">.</span>
+          Pulsepoint<span className="text-[#C586A5] text-[30px] md:text-[60px]">.</span>
         </div>
 
         {/* Nav menu */}
@@ -105,7 +105,10 @@ const NavPage = () => {
             {/* Profile Container */}
             {openProfile && (
               <div className=" fixed group-hover top-[110px] w-[200px] p-6  bg-[#F8F8F8] rounded-[4px] shadow flex flex-col gap-4 ">
-                <p className="text-[#5B5B5B] text-[18px] cursor-pointer ">
+                <p onClick={() => {
+                  navigate("/sign-in");
+                  window.scrollTo({top: 0, behavior: "smooth"});
+                }} className="text-[#5B5B5B] text-[18px] cursor-pointer ">
                   My Profile
                 </p>
                 <p

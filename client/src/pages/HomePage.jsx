@@ -66,7 +66,10 @@ const HomePage = () => {
         {/* map the data here */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8 space-y-2">
           {clothData.slice(10, 20).map((item, index) => (
-            <div onClick={() => navigate(`/all-collections/${item.id}`)} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md" key={index}>
+            <div onClick={() => {
+              navigate(`/all-collections/${item.id}`);
+              window.scrollTo({top: 0, behavior: "smooth"});
+            }} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md" key={index}>
               <div className=" ">
                 <img
                   src={item.image}
