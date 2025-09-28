@@ -4,6 +4,7 @@ import easyExchange from "../assets/easyExchange.svg";
 import returnPolicy from "../assets/returnPolicy.svg";
 import customerSupport from "../assets/customerSupport.svg";
 import Subscribe from "../components/Subscribe";
+import nikeWomen from "../assets/nike-women.jpg"
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setProduct } from "../Redux/ClothDataSlice";
@@ -45,9 +46,9 @@ const HomePage = () => {
         </div>
         <div className="w-full">
           <img
-            src={heroImg}
+            src={nikeWomen}
             alt="hero image"
-            className="w-full object-cover h-full"
+            className="w-full object-cover h-full md:h-[800px] "
           />
         </div>
       </div>
@@ -72,7 +73,7 @@ const HomePage = () => {
             }} className="flex flex-col cursor-pointer gap-2 transform hover:scale-105 duration-500 transition hover:shadow-lg rounded-md" key={index}>
               <div className=" ">
                 <img
-                  src={item.image}
+                  src={item?.image}
                   alt="product image"
                   className="md:h-[300px] w-full rounded-t-md"
                 />
